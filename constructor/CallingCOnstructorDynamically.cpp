@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 // Dynamic Object initialization using constructor
 class Calculation{
     int p,r,t;
