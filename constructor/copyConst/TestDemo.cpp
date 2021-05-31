@@ -26,6 +26,7 @@ public:
 
     X(X &obj)
     {
+        // deep copy is invoked when one object is invoked memory from heap area.
         a = new int;
         // (obj.a)-->will be an address of pointer a
         // when we put *(obj.a) -->it will gives the value of the adress and it will be assigned to a
