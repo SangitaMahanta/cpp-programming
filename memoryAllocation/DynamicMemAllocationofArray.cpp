@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+  int* p;
+  int arr[5];
+  p=new int[5];
+      int arr1[5];
+  for (int i = 0; i < 5; i++)
+  {
+      cout<<"enter the value for index "<<endl;
+    //   cin>>*(p+i);
+      cin>>(arr1[i]=*(p+1));
+      
+  }
+
+  for (int i = 0; i < 5; i++)
+  {
+      cout<<arr1[i]<<"\t";
+  }
+  
+  
+    return 0;
+}
