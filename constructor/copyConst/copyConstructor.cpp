@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// If we dont craete a copy constructor Comiler will automatically create a copy constructoe by itself
+// If we dont craete a copy constructor Compiler will automatically create a copy constructoe by itself
 // The prototype of a copy constructor looks like ->  ClassName(ClassName &obj)
 class Point{
     int a,b;
