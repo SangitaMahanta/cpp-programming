@@ -58,4 +58,19 @@ int main()
     cout << "before clear the vector size is = " << v.size() << " & the capacity is " << v.capacity() << endl;
     v.clear();
     cout << "After clear the size is = " << v.size() << " & the capacity is " << v.capacity() << endl;
+  
+//   for iterator begin is used
+ vector<int> vect(5,1);//5 element fill with 1
+ cout<<"print vector vect  "<<endl;
+ for (int i : vect)
+ {
+     cout<<  i <<" ";
+ }
+ cout<<endl;
+ vector<int> copy(vect);
+ cout<<"copy vector vect int copy "<<endl;
+ for (int i : copy)
+ {
+     cout<<  i <<" ";
+ }
 }
