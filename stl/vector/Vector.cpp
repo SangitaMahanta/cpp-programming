@@ -54,23 +54,33 @@ int main()
              << " ";
     }
     cout << endl;
+    // delete element from frist
+    v.erase(v.begin());
+    // v.erase(v.begin()+3);// erese the particular index element
+    cout << "Delete first elemet from vector " << endl;
+    for (int i : v)
+    {
+        cout << i
+             << " ";
+    }
+    cout << endl;
     //clear - when we clear the vector size is clered but capacity(memory space)are not cleared.
     cout << "before clear the vector size is = " << v.size() << " & the capacity is " << v.capacity() << endl;
     v.clear();
     cout << "After clear the size is = " << v.size() << " & the capacity is " << v.capacity() << endl;
-  
-//   for iterator begin is used
- vector<int> vect(5,1);//5 element fill with 1
- cout<<"print vector vect  "<<endl;
- for (int i : vect)
- {
-     cout<<  i <<" ";
- }
- cout<<endl;
- vector<int> copy(vect);
- cout<<"copy vector vect int copy "<<endl;
- for (int i : copy)
- {
-     cout<<  i <<" ";
- }
+
+    //   for iterator begin is used
+    vector<int> vect(5, 1); //5 element fill with 1
+    cout << "print vector vect  " << endl;
+    for (int i : vect)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+    vector<int> copy(vect);
+    cout << "copy vector vect int copy " << endl;
+    for (int i : copy)
+    {
+        cout << i << " ";
+    }
 }
