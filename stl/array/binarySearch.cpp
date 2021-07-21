@@ -19,7 +19,7 @@ int binarySearch(int arr[],int n, int s){
      else if (arr[mid]<s)
      {
          f = mid+1;
-
+ 
      }
      
      
