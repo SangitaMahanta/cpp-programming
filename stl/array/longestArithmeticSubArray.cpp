@@ -10,22 +10,22 @@
 #include<iostream>
 using namespace std;
 
-
 int main(){
 int arr[]= {10,7,4,6,8,10,11};
-int curr=arr[0]-arr[1];
-int count=0;
+int curr=arr[1]-arr[0];
+int count=2,ans=0;
 for (int i = 2; i < 7; i++)
 {
-       if(arr[i]-arr[i-1] == curr){
-           curr = arr[i]-arr[i-1];
+       if(arr[i]-arr[i-1]== curr){
            count++;
        }else{
            
+           curr =  arr[i]-arr[i-1];
+           count=2;
 
        }
-    
+    ans = max(ans,curr);
     
 }
-
+cout<<"Ans = "<<ans;
 }
